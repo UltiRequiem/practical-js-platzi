@@ -1,4 +1,4 @@
-# Variables y operaciones
+## Variables y operaciones
 
 - ¿Qué es una variable y para qué sirve?
 
@@ -84,3 +84,24 @@
 - ¿Puedo mezclar ciclos y condicionales?
 
   Si se puede, y es bastante normal hacerlo.
+
+## Listas
+
+- ¿Qué es un array?
+
+  Es como una caja grande donde puedes meter otras cajas.
+
+- ¿Qué es un objeto?
+
+  Es como una caja con propiedades.
+
+- ¿Cuándo es mejor usar objetos o arrays?
+
+  Depende de el problema y el estilo de código que
+  estes siguiendo. Aunque tambien puede depender de
+  lo que te de la libreria que estes usando. Mientras
+  mas uniforme tu código mejor.
+
+- ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+  Si, es normal.
