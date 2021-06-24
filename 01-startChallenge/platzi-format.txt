@@ -1,0 +1,217 @@
+## Variables y operaciones
+
+- ¿Qué es una variable y para qué sirve?
+
+  Es como una cajita donde puedes guardar datos
+  para despues hacer algo con ellos.
+
+- ¿Cuál es la diferencia entre declarar e inicializar una variable?
+
+  Declarar es cuando la nombras, mas no le asignas un valor.
+  En Javascript seria asi:
+
+  ```javascript
+  let variable;
+  ```
+
+  Mientras que inicializar es cuando ya le das un valor.
+
+  ```javascript
+  const MY_NUMBER = 5;
+  ```
+
+- ¿Cuál es la diferencia entre sumar números y concatenar strings?
+
+  Cuando sumas números obtienes un valor de tipo `number`, mientras
+  que cuando concatenas `strings` obtienes un valor del mismo tipo (`strings`).
+
+- ¿Cuál operador me permite sumar o concatenar?
+
+  El signo `+`.
+
+
+Mi código:
+```javascript
+const NAME = 'Eliaz';
+const LASTNAME = 'Bobadilla';
+const USERNAME = 'UltiRequiem';
+const AGE = 14;
+const EMAIL = 'eliaz.bobadilladev@gmail.com';
+const ADULT = false;
+const SAVED_MONEY = 2;
+const DEBS = 0;
+
+console.log(`Hi! My name is ${NAME} ${LASTNAME}`);
+console.log(`My total saved money is ${SAVED_MONEY - DEBS} soles.`);
+```
+
+
+
+## Funciones
+
+- ¿Qué es una función?
+
+  Es un trozo de código que sigue una serie de pasos. Puede recibir
+  parametros y esta hecho para poder ser reutilizado.
+
+- ¿Cuándo me sirve usar una función en mi código?
+
+  Combiene utilizar funciones si es que te das cuenta de que ciertas
+  lineas de código se repiten en muchas partes.
+
+- ¿Cuál es la diferencia entre parámetros y argumentos de una función?
+
+  Los parametros son una propiedad intrínseca de un procedimiento,
+  dado que está incluido en su definición. En tanto, los argumentos
+  son más bien los valores actuales asignados a los parámetros variables
+  cuando la función es llamada.
+
+```javascript
+const introduceMySelf = (name, lastname, nickname) => {
+  console.log(
+    `Mi nombre es ${name} ${lastname}, pero prefiero que me digas ${nickname}.`
+  );
+};
+
+introduceMySelf('Eliaz', 'Bobadilla', 'Zero');
+```
+
+
+## Condicionales
+
+- ¿Qué es una condicional?
+
+  Es una condición que debe ser cumplida para ejecutar un trozo de
+  código.
+
+- ¿Qué tipos de condicionales existen en JavaScript y cuáles son sus diferencias?
+
+  Existe la familia de If(`if`,`else if` y `else`), los switchs y ternarios.
+  El if se usa cuando son pocas cosas las que quieres comprobar mientras
+  que el switch cuando ya son mas casos. Los Ternarios (mis favoritos) son
+  como el `if` pero con una sintaxis mas reducida.
+
+- ¿Puedo combinar funciones y condicionales?
+
+  Claro!
+
+```javascript
+const tipoDeSuscripcion = 'Basic';
+
+if (tipoDeSuscripcion === 'Free') {
+  console.log('Solo puedes tomar los cursos gratis');
+} else if (tipoDeSuscripcion === 'Basic') {
+  console.log('Puedes tomar casi todos los cursos de Platzi durante un mes.');
+} else if (tipoDeSuscripcion === 'Expert') {
+  console.log('Puedes tomar casi todos los cursos de Platzi durante un año.');
+} else if (tipoDeSuscripcion === 'Expert+') {
+  console.log(
+    'Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año.'
+  );
+}
+```
+```javascript
+const printStatus = (suscripcionType) => {
+  if (suscripcionType !== 'Free') {
+    console.log('Puedes tomar muchos cursos.');
+    return;
+  }
+  console.log('Estás limitado en los cursos.');
+};
+
+const suscripcion = 'Expert+';
+printStatus(suscripcion);
+```
+
+## Ciclos
+
+- ¿Qué es un ciclo?
+
+  Es un trozo de código que se repite.
+
+- ¿Qué tipos de ciclos existen en JavaScript?
+
+  Existen: `for`,`for of`,`for in`, `while`,`do while`, etc.
+
+- ¿Qué es un ciclo infinito y por qué es un problema?
+
+  Es un ciclo que nunca se detiene, y es problematico porque
+  no lo podemos controlar.
+
+- ¿Puedo mezclar ciclos y condicionales?
+
+  Si se puede, y es bastante normal hacerlo.
+
+```javascript
+let i = 0;
+while (i < 5) {
+  console.log(`El valor de i es: ${i}.`);
+  i++;
+}
+
+// ...
+
+i = 10;
+while (i >= 2) {
+  console.log(`El valor de i es: ${i}.`);
+  i--;
+}
+```
+
+```javascript
+let input = 0;
+
+do {
+  input = prompt('¿Cual es el resultado de 2 + 2?');
+} while (!(input === 4));
+```
+
+## Listas
+
+- ¿Qué es un array?
+
+  Es como una caja grande donde puedes meter otras cajas.
+
+- ¿Qué es un objeto?
+
+  Es como una caja con propiedades.
+
+- ¿Cuándo es mejor usar objetos o arrays?
+
+  Depende de el problema y el estilo de código que
+  estes siguiendo. Aunque tambien puede depender de
+  lo que te de la libreria que estes usando. Mientras
+  mas uniforme tu código mejor.
+
+- ¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+
+  Si, es normal.
+
+```javascript
+const persona = {
+  nombre: 'Roberto',
+  apellido: 'Garcia',
+  edad: 14,
+};
+
+const frutas = ['Pera', 'Manzana', 'Sandia'];
+
+const oneFunc = (array) => {
+  array.forEach((elem) => {
+    console.log(elem);
+  });
+};
+
+const anotherFunc = (objeto) => {
+  Object.values(objeto).forEach((elem) => {
+    console.log(elem);
+  });
+};
+
+const oneFunc = (array) => {
+  console.log(array[0]);
+};
+```
+Espero que se haya entendido lo que trate de explicar, y si me equivoque en algo seria genial que me corrijan
+en los comentarios para seguir aprendiendo :)
+Les dejo el enlace a mi repositorio de GitHub de este curso donde tengo mas notas y todo mi código: [UltiRequiem/practical-js-platzi](https://github.com/UltiRequiem/practical-js-platzi).
