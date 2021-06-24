@@ -78,7 +78,7 @@
 
 - ¿Qué es un ciclo infinito y por qué es un problema?
 
-  Es un ciclo que nunca se detiene, y es problematico porque,
+  Es un ciclo que nunca se detiene, y es problematico porque
   no lo podemos controlar.
 
 - ¿Puedo mezclar ciclos y condicionales?
