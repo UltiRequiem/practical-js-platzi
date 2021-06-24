@@ -65,3 +65,22 @@
 - ¿Puedo combinar funciones y condicionales?
 
   Claro!
+
+## Ciclos
+
+- ¿Qué es un ciclo?
+
+  Es un trozo de código que se repite.
+
+- ¿Qué tipos de ciclos existen en JavaScript?
+
+  Existen: `for`,`for of`,`for in`, `while`,`do while`, etc.
+
+- ¿Qué es un ciclo infinito y por qué es un problema?
+
+  Es un ciclo que nunca se detiene, y es problematico porque,
+  no lo podemos controlar.
+
+- ¿Puedo mezclar ciclos y condicionales?
+
+  Si se puede, y es bastante normal hacerlo.
