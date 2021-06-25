@@ -1,3 +1,12 @@
+/**
+ * Get the height of an isosceles triangle.
+ *
+ * @param {number} sideOne Measure of the first Triangle side
+ * @param {number} sideTwo Measure of the second Triangle side
+ * @param {number} base Measure of the Triangle base
+ * @returns {number} The height of an isosceles triangle
+ */
+
 const calcIsocelesTriangle = (sideOne, sideTwo, base) => {
   if (sideOne !== sideTwo) {
     return 'Sides a and b are not equal.';
