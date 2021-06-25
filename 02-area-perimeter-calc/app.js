@@ -1,5 +1,6 @@
 // Constants
 const { PI } = Math;
+const ANSWER = document.getElementById('answer');
 
 // Functions
 const perimeterSquare = (l) => l * 4;
@@ -13,13 +14,15 @@ const areaTriangle = (b, h) => (b * h) / 2;
 const circuleDiameter = (r) => r * 2;
 
 const calculatePerimeterSquare = () => {
-  // eslint-disable-next-line no-alert
-  alert(perimeterSquare(document.getElementById('InputCuadrado').value));
+  ANSWER.textContent = perimeterSquare(
+    document.getElementById('InputCuadrado').value
+  );
 };
 
 const calculateSquareArea = () => {
-  // eslint-disable-next-line no-alert
-  alert(areaSquare(document.getElementById('InputCuadrado').value));
+  ANSWER.textContent = areaSquare(
+    document.getElementById('InputCuadrado').value
+  );
 };
 
 const perimeterCircule = (r) => circuleDiameter(r) * PI;
