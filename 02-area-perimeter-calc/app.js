@@ -15,14 +15,12 @@ const circuleDiameter = (r) => r * 2;
 
 const calculatePerimeterSquare = () => {
   ANSWER.textContent = perimeterSquare(
-    document.getElementById('InputCuadrado').value
+    document.getElementById('squareInput').value
   );
 };
 
 const calculateSquareArea = () => {
-  ANSWER.textContent = areaSquare(
-    document.getElementById('InputCuadrado').value
-  );
+  ANSWER.textContent = areaSquare(document.getElementById('squareInput').value);
 };
 
 const perimeterCircule = (r) => circuleDiameter(r) * PI;
