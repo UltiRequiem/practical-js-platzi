@@ -5,8 +5,6 @@ const calcularMediaAritmetica = (arr) =>
     (valorAcumulado = 0, nuevoElemento) => valorAcumulado + nuevoElemento
   ) / arr.length;
 
-const mitadLista1 = NUMBERS.length / 2;
-
 function isEven(n) {
   if (!n % 2 === 0) {
     return true;
@@ -14,17 +12,16 @@ function isEven(n) {
   return false;
 }
 
-let mediana;
+function main() {
+  if (isEven(NUMBERS.length)) {
+    const promedioElemento1y2 = calcularMediaAritmetica([
+      NUMBERS[NUMBERS.length / 2 - 1],
+      NUMBERS.length / 2,
+    ]);
 
-if (isEven(NUMBERS.length)) {
-  const elemento1 = NUMBERS[mitadLista1 - 1];
-  const elemento2 = NUMBERS[mitadLista1];
-
-  const promedioElemento1y2 = calcularMediaAritmetica([elemento1, elemento2]);
-
-  mediana = promedioElemento1y2;
-} else {
-  mediana = NUMBERS[mitadLista1];
+    return promedioElemento1y2;
+  }
+  return NUMBERS[NUMBERS.length / 2];
 }
 
-console.log(mediana);
+console.log(main());
