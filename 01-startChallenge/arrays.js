@@ -1,10 +1,10 @@
 const persona = {
-  nombre: 'Oscar',
-  apellido: 'Aguilar',
+  nombre: "Oscar",
+  apellido: "Aguilar",
   edad: 21,
 };
 
-const frutas = ['Pera', 'Manzana', 'Sandia'];
+const frutas = ["Pera", "Manzana", "Sandia"];
 
 const oneFunc = (array) => {
   array.forEach((elem) => {

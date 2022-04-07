@@ -2,7 +2,7 @@ const esPar = (n) => n % 2 === 0;
 
 const calcularMediaAritmetica = (lista) =>
   lista.reduce(
-    (valorAcumulado = 0, nuevoElemento) => valorAcumulado + nuevoElemento
+    (valorAcumulado = 0, nuevoElemento) => valorAcumulado + nuevoElemento,
   ) / lista.length;
 
 function medianaSalarios(arr) {
@@ -21,7 +21,7 @@ function medianaSalarios(arr) {
 const salarios = colombia.map((personita) => personita.salary);
 
 const salariosColSorted = salarios.sort(
-  (salaryA, salaryB) => salaryA - salaryB
+  (salaryA, salaryB) => salaryA - salaryB,
 );
 
 const medianaGeneral = medianaSalarios(salariosColSorted);

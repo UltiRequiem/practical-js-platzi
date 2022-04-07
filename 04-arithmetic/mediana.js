@@ -2,7 +2,7 @@ const NUMBERS = [100, 200, 500, 400000000];
 
 const calcularMediaAritmetica = (arr) =>
   arr.reduce(
-    (valorAcumulado = 0, nuevoElemento) => valorAcumulado + nuevoElemento
+    (valorAcumulado = 0, nuevoElemento) => valorAcumulado + nuevoElemento,
   ) / arr.length;
 
 function isEven(n) {

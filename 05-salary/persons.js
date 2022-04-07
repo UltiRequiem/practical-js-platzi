@@ -1,81 +1,81 @@
 const colombia = [];
 colombia.push({
-  name: 'Camila',
+  name: "Camila",
   salary: 500,
 });
 colombia.push({
-  name: 'Nath',
+  name: "Nath",
   salary: 1500,
 });
 colombia.push({
-  name: 'Luisa',
+  name: "Luisa",
   salary: 1800,
 });
 colombia.push({
-  name: 'Laura',
+  name: "Laura",
   salary: 1000,
 });
 colombia.push({
-  name: 'Daniela',
+  name: "Daniela",
   salary: 2200,
 });
 colombia.push({
-  name: 'Esperancita',
+  name: "Esperancita",
   salary: 200,
 });
 colombia.push({
-  name: 'Carla',
+  name: "Carla",
   salary: 500,
 });
 colombia.push({
-  name: 'Antonieta',
+  name: "Antonieta",
   salary: 1500,
 });
 colombia.push({
-  name: 'Alicia',
+  name: "Alicia",
   salary: 1300,
 });
 colombia.push({
-  name: 'Ana',
+  name: "Ana",
   salary: 2400,
 });
 colombia.push({
-  name: 'Julia',
+  name: "Julia",
   salary: 3400,
 });
 colombia.push({
-  name: 'Rosa',
+  name: "Rosa",
   salary: 400,
 });
 colombia.push({
-  name: 'Angélica',
+  name: "Angélica",
   salary: 400,
 });
 colombia.push({
-  name: 'Tatiana',
+  name: "Tatiana",
   salary: 400,
 });
 colombia.push({
-  name: 'Lorena',
+  name: "Lorena",
   salary: 600,
 });
 colombia.push({
-  name: 'Carolina',
+  name: "Carolina",
   salary: 1600,
 });
 colombia.push({
-  name: 'Fernanda',
+  name: "Fernanda",
   salary: 2600,
 });
 colombia.push({
-  name: 'Nora',
+  name: "Nora",
   salary: 1000,
 });
 colombia.push({
-  name: 'Gisselle',
+  name: "Gisselle",
   salary: 2000,
 });
 colombia.push({
-  name: 'Bill Gates',
+  name: "Bill Gates",
   salary: 100000000,
 });

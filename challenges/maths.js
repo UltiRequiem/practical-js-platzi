@@ -9,7 +9,7 @@
 
 const calcIsocelesTriangle = (sideOne, sideTwo, base) => {
   if (sideOne !== sideTwo) {
-    return 'Sides a and b are not equal.';
+    return "Sides a and b are not equal.";
   }
 
   return Math.sqrt(sideOne ** 2 - base ** 2 / 4);

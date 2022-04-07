@@ -1,6 +1,6 @@
 // Constants
 const { PI } = Math;
-const ANSWER = document.getElementById('answer');
+const ANSWER = document.getElementById("answer");
 
 // Functions
 const perimeterSquare = (l) => l * 4;
@@ -15,12 +15,12 @@ const circuleDiameter = (r) => r * 2;
 
 const calculatePerimeterSquare = () => {
   ANSWER.textContent = perimeterSquare(
-    document.getElementById('squareInput').value
+    document.getElementById("squareInput").value,
   );
 };
 
 const calculateSquareArea = () => {
-  ANSWER.textContent = areaSquare(document.getElementById('squareInput').value);
+  ANSWER.textContent = areaSquare(document.getElementById("squareInput").value);
 };
 
 const perimeterCircule = (r) => circuleDiameter(r) * PI;
